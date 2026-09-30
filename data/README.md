@@ -34,6 +34,3 @@ The script converts hourly timestamps to Peru local time using the same UTC-5 as
 - temperature -> weekly mean;
 - rainfall -> weekly sum.
 
-## Reproducibility note
-
-Before publishing the repository, add the confirmed original public data-source citation/link for the Peru malaria dataset if its redistribution terms permit it. Do not upload confidential or patient-identifiable hospital data to a public GitHub repository.
