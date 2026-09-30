@@ -43,8 +43,8 @@ DATA_DIR = ROOT / "data"
 FIGURES_DIR = ROOT / "figures"
 FIGURES_DIR.mkdir(exist_ok=True)
 
-MALARIA_FILE = DATA_DIR / "peru_malaria_cleaned.csv"
-WEATHER_FILE = DATA_DIR / "open_meteo_hourly.xlsx"
+MALARIA_FILE = DATA_DIR / "Malariadataset.xlsx"
+WEATHER_FILE = DATA_DIR / "open-meteo-2.92S76.39W215m.xlsx"
 
 YEAR_COL = "year"
 WEEK_COL = "epidermiological week"  # spelling preserved from the original data
@@ -134,7 +134,7 @@ if not WEATHER_FILE.exists():
         "Place the hourly weather workbook in data/ or update WEATHER_FILE."
     )
 
-malaria = pd.read_csv(MALARIA_FILE)
+malaria = pd.read_excel(Malariadataset.xlsx)
 
 weekly_cases = (
     malaria.groupby([YEAR_COL, WEEK_COL])
