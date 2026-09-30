@@ -262,9 +262,9 @@ malaria-burden-forecasting/
 |   |-- actual_vs_pred.png
 |   `-- uncertainty_plot.png
 |
-`-- docs/
-    |-- Full_Study_Guide.pdf
-    `-- Project_Brief.pdf
+`-- notebooks/
+    |-- README.md
+    `-- malaria_forecasting_analysis.ipynb
 ```
 
 The raw datasets are not included in the repository. See `data/README.md` for the expected input structure.
