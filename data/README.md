@@ -27,7 +27,7 @@ An Excel file containing:
 
 Suggested filename:
 
-`open_meteo_hourly.xlsx`
+`open-meteo-2.92S76.39W215m.xlsx`
 
 The script converts hourly timestamps to Peru local time using the same UTC-5 assumption used in the original analysis, reconstructs Sunday-Saturday epidemiological weeks, and aggregates:
 
