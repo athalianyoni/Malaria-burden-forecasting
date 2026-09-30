@@ -6,7 +6,7 @@ The analysis expects two inputs.
 
 ## 1. Malaria surveillance data
 
-A cleaned record-level CSV containing at minimum:
+A cleaned record-level excel dataset containing at minimum:
 
 - `year`
 - `epidermiological week`
@@ -15,7 +15,7 @@ Each row is treated as one reported malaria surveillance record/case. The origin
 
 Suggested filename:
 
-`peru_malaria_cleaned.csv`
+`Malariadataset.xlsx`
 
 ## 2. Hourly weather data
 
