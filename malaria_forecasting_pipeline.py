@@ -125,7 +125,7 @@ def fit_nb(train_df, test_df, features, scale_features=None):
 if not MALARIA_FILE.exists():
     raise FileNotFoundError(
         f"Missing malaria file: {MALARIA_FILE}\n"
-        "Place the cleaned surveillance CSV in data/ or update MALARIA_FILE."
+        "Place the cleaned surveillance excel file in data/ or update MALARIA_FILE."
     )
 
 if not WEATHER_FILE.exists():
@@ -134,7 +134,7 @@ if not WEATHER_FILE.exists():
         "Place the hourly weather workbook in data/ or update WEATHER_FILE."
     )
 
-malaria = pd.read_excel(Malariadataset.xlsx)
+malaria = pd.read_excel(MALARIA_FILE)
 
 weekly_cases = (
     malaria.groupby([YEAR_COL, WEEK_COL])
